@@ -1,0 +1,24 @@
+<div class="contenedor">
+<h2>Formulario</h2>
+  <!--
+      <form [formGroup]="checkoutForm" action="/action_page.php">
+      -->
+<form [formGroup]="experienceForm">
+  <b>Colegio:</b><br>
+  <!--
+      <input type="text" class="nuestroInput" name="Colegio" maxlength="100" style="background-color:#f8f8f8"><br>
+    -->
+ 
+        <mat-label>Nombew de la Escula</mat-label>
+        <input matInput placeholder="Placeholder" formControlName="schoolName">
+  <b>Empresa:</b><br>
+  <input type="text" name="Empresa" maxlength="100" style="background-color:#f8f8f8"><br>
+  <b>Duración:</b><br>
+  <input type="number" name="Duración" maxlength="3" value="0" max="999" min="0" autocomplete="off" style="background-color:#f8f8f8">Horas<br>
+  <b>Carrera de Interés:</b><br>
+  <input type="text" name="Carrera" maxlength="100" style="background-color:#f8f8f8"><br>
+  <b>Tu Experiencia:</b><br>
+  <textarea name="message" rows="20" cols="50" autocomplete="off" maxlength="800" style="resize:none;background-color:#f8f8f8" ></textarea><br><br>
+  <input type="submit"><input type="file">
+</form>
+</div>
