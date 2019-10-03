@@ -1,12 +1,12 @@
-/* <style>
+ <style>
   .header {
   background-color: #f1f1f1;
-  color: white
+  color: white;
   padding: 20px;
   text-align: center;
 }
 
-div.static {nav 
+.static { 
   float: left;
   width: 30%;
   height: 300px; 
@@ -17,7 +17,7 @@ div.static {nav
   box-sizing: border-box;
 }
 
-body. {
+.body{
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -25,16 +25,18 @@ body. {
 /* Style the side navigation */
 .contenedor{
     width: 100%;
+    padding-right:100px
 }
 .sidenav {
   height: 400px;
   width: 200px;
   position: sticky;
   z-index: 1;
-  top: 0;
-  left: 0;
   background-color: #111;
   overflow-x: hidden;
+    min-height:50px;
+    margin-top:-21px;
+ 
 }
 
 
@@ -58,4 +60,18 @@ body. {
   height: 2000px;
   margin-top:0px;
   align-content:fixed
+}
+.main {
+display: flex;
+padding-right:200px
+}   
+p {
+    margin: 0 0 0px;
+}
+element.style {
+    background: rgba(13, 20, 38);
+    text-align: center;
+}
+.heading{
+ text-align:"center";
 }
