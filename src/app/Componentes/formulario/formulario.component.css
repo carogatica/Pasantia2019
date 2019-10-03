@@ -1,5 +1,5 @@
 .contenedor {
-    width: 380px;
+    width: 420px;
 }
 mat-form-field {
     margin-right: 12px;
@@ -10,4 +10,10 @@ mat-form-field {
 
 .twoColumns {
     display: flex;
+}
+.titulo {
+    text-align: center;
+}
+.botones {
+    text-align: center;
 }
