@@ -7,45 +7,59 @@
   <!--
       <input type="text" class="nuestroInput" name="Colegio" maxlength="100" style="background-color:#f8f8f8"><br>
     -->
-    <div> <!--Email-->
-      <mat-form-field appearance="outline">
-        <mat-label>Email</mat-label>
-        <input matInput placeholder="Ejem:Carlitos@gmail.com">
-      </mat-form-field>
+   <div class="primera-linea">
+     <div> <!--Username-->
+       <mat-form-field appearance="outline">
+         <mat-label>Username</mat-label>
+         <input matInput placeholder="Ejem:Carlitos777">
+       </mat-form-field>
+     </div>
+      <div> <!--Email-->
+        <mat-form-field appearance="outline">
+          <mat-label>Email</mat-label>
+          <input matInput placeholder="Ejem:Carlitos@gmail.com">
+        </mat-form-field>
+      </div>
     </div>
-    <div> <!--nombre de la escuela-->
-      <mat-form-field appearance="outline">
-        <mat-label>School Name</mat-label>
-        <input matInput placeholder="Ejem:PioXII">
-      </mat-form-field>
+    <div>
+      <div> <!--nombre de la escuela-->
+        <mat-form-field appearance="outline">
+          <mat-label>School Name</mat-label>
+          <input matInput placeholder="Ejem:PioXII">
+        </mat-form-field>
+      </div>
+      <div> <!--compania-->
+        <mat-form-field appearance="outline">
+        <mat-label>Company</mat-label>
+        <input matInput placeholder="Ejem:McAfee">
+        </mat-form-field>
+      </div>
     </div>
-    <div> <!--compania-->
-      <mat-form-field appearance="outline">
-      <mat-label>Company</mat-label>
-      <input matInput placeholder="Ejem:McAfee">
-      </mat-form-field>
-    </div>
-    <div> <!--duracion-->
-      <mat-form-field wi appearance="outline" hintLabel="Max 10 characters">
-        <mat-label>Duration (days)</mat-label>
-        <input matInput #input maxlength="10" placeholder="Ejem:4 Days">
-        <mat-hint align="end">{{input.value?.length || 0}}/10</mat-hint>
-      </mat-form-field>
-    </div>
-    <div> <!--carrera-->
-      <mat-form-field appearance="outline">
-        <mat-label>Career</mat-label>
-        <input matInput placeholder="Ejem:Ing. en Sistemas">
-      </mat-form-field>
+    <div>
+      <div> <!--duracion-->
+        <mat-form-field wi appearance="outline" hintLabel="Max 10 characters">
+          <mat-label>Duration (days)</mat-label>
+          <input matInput #input maxlength="10" placeholder="Ejem:4 Days">
+          <mat-hint align="end">{{input.value?.length || 0}}/10</mat-hint>
+        </mat-form-field>
+      </div>
+      <div> <!--carrera-->
+        <mat-form-field appearance="outline">
+          <mat-label>Career</mat-label>
+          <input matInput placeholder="Ejem:Ing. en Sistemas">
+        </mat-form-field>
+      </div>
     </div>
     <mat-form-field appearance="outline">
         <mat-label>Tu Experiencia</mat-label>
         <textarea matInput
                   cdkTextareaAutosize
+                  #autosize="cdkTextareaAutosize"
                   cdkAutosizeMinRows="5"
                   cdkAutosizeMaxRows="50">
         </textarea>
       </mat-form-field><br>
-  <input type="submit"><input type="file"> 
+      <button mat-button>Submit</button>
+      <button mat-button>Load file</button>
 </form>
 </div>
