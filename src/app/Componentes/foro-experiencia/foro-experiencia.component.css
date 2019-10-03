@@ -27,7 +27,7 @@ body. {
     width: 100%;
 }
 .sidenav {
-  height: 1000px;
+  height: 400px;
   width: 200px;
   position: sticky;
   z-index: 1;
@@ -54,6 +54,8 @@ body. {
 
 /* Style the content */
 .content {
-  margin-left: 150px;
-  padding-left: 150px;
+  padding-left:200px;
+  height: 2000px;
+  margin-top:0px;
+  align-content:fixed
 }
