@@ -7,7 +7,7 @@
   <!--
       <input type="text" class="nuestroInput" name="Colegio" maxlength="100" style="background-color:#f8f8f8"><br>
     -->
-   <div class="primera-linea">
+   <div class="primera-linea twoColumns">
      <div> <!--Username-->
        <mat-form-field appearance="outline">
          <mat-label>Username</mat-label>
@@ -21,7 +21,7 @@
         </mat-form-field>
       </div>
     </div>
-    <div>
+    <div class="segunda-linea twoColumns">
       <div> <!--nombre de la escuela-->
         <mat-form-field appearance="outline">
           <mat-label>School Name</mat-label>
@@ -35,7 +35,7 @@
         </mat-form-field>
       </div>
     </div>
-    <div>
+    <div class="tercer-linea twoColumns">
       <div> <!--duracion-->
         <mat-form-field wi appearance="outline" hintLabel="Max 10 characters">
           <mat-label>Duration (days)</mat-label>
@@ -50,7 +50,7 @@
         </mat-form-field>
       </div>
     </div>
-    <mat-form-field appearance="outline">
+    <mat-form-field appearance="outline" class="TextareaYourExperience">
         <mat-label>Tu Experiencia</mat-label>
         <textarea matInput
                   cdkTextareaAutosize
@@ -58,7 +58,7 @@
                   cdkAutosizeMinRows="5"
                   cdkAutosizeMaxRows="50">
         </textarea>
-      </mat-form-field><br>
+    </mat-form-field><br>
       <button mat-button>Submit</button>
       <button mat-button>Load file</button>
 </form>

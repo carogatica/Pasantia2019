@@ -4,3 +4,10 @@
 mat-form-field {
     margin-right: 12px;
   }
+.TextareaYourExperience {
+    width: 420px;
+}
+
+.twoColumns {
+    display: flex;
+}
