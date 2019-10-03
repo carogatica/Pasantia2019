@@ -7,7 +7,12 @@
   <!--
       <input type="text" class="nuestroInput" name="Colegio" maxlength="100" style="background-color:#f8f8f8"><br>
     -->
- 
+    <div> <!--Email-->
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="Ejem:Carlitos@gmail.com">
+      </mat-form-field>
+    </div>
     <div> <!--nombre de la escuela-->
       <mat-form-field appearance="outline">
         <mat-label>School Name</mat-label>
@@ -33,15 +38,14 @@
         <input matInput placeholder="Ejem:Ing. en Sistemas">
       </mat-form-field>
     </div>
-  Tu Experiencia:<br>
-  <mat-form-field [style.fontSize]="fontSize.value">
-    <mat-label>Autosize textarea</mat-label>
-    <textarea matInput
-            cdkTextareaAutosize
-            #autosize="cdkTextareaAutosize"
-            cdkAutosizeMinRows="10"
-            cdkAutosizeMaxRows="50"></textarea>
-  </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Tu Experiencia</mat-label>
+        <textarea matInput
+                  cdkTextareaAutosize
+                  cdkAutosizeMinRows="5"
+                  cdkAutosizeMaxRows="50">
+        </textarea>
+      </mat-form-field><br>
   <input type="submit"><input type="file"> 
 </form>
 </div>
