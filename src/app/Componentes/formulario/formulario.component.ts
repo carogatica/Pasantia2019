@@ -4,7 +4,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 @Component({
   selector: 'app-formulario',
   templateUrl: './formulario.component.html',
-  styleUrls: ['./formulario.component.css']
+  styleUrls: ['./formulario.component.css'] 
 })
 export class FormularioComponent implements OnInit {
   experienceForm: FormGroup;
@@ -15,7 +15,7 @@ export class FormularioComponent implements OnInit {
     this.experienceForm = this.formBuilder.group({
       schoolName: [''],
       companyName: [''],
-      duration: [966847516416],
+      duration: ['966847516416'],
       career: ['panaderia'],
       experienceFeedback: ['']
     });
