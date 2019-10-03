@@ -1,0 +1,14 @@
+<div class="fixed" id="myForm">
+    <form action="/action_page.php" class="form-container">
+      <h1>Login</h1>
+      <label> for="email"><b>Usuario</b></label>
+      <input type="text" placeholder="Ingresar Usuario" name="usuario" required  [(ngModel)]="usuario">
+      {{usuario}}
+      <label for="psw"><b>Contraseña</b></label>
+      <input type="password" placeholder="Ingresar Contraseña" name="password" required>
+  
+      <button type="submit" class="btn">Login</button>
+      <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+      
+    </form>
+</div>
