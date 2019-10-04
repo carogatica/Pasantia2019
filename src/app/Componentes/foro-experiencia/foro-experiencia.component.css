@@ -28,7 +28,7 @@
     padding-right:100px
 }
 .sidenav {
-  height: 521px;
+  height: 560px;
   width: 200px;
   position: sticky;
   z-index: 1;
@@ -56,14 +56,14 @@
 
 /* Style the content */
 .content {
-  padding-left:200px;
+  padding-left:55px;
   height:500px;
   margin-top:0px;
   align-content:fixed
 }
 .main {
 display: flex;
-padding-right:200px
+padding-right:100px
 }   
 p {
     margin: 0 0 0px;
@@ -76,9 +76,42 @@ margin-left: auto;
 width: max-content;
 }
 footer{
-  background-color: powderblue;
+  background-color: rgb(65, 15, 58);
   padding:10px;
   text-align: center;
   color: white;
 
 }
+.navbar{
+  border-radius: 0px;
+}
+.navbar-inverse {
+  background-color: rgb(65, 15, 58);
+  border-color: #080808
+}
+.content{
+    background-color: lightgrey;
+    width: 684px;
+    border: 11px solid rgb(65, 15, 58);
+    padding: 20px;
+    margin-left: 22px;
+    align-self: center
+  }
+
+  
+  .main2{
+    display: flex; 
+    justify-content: left; 
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+  }
+  h1{
+    font-size:2em;
+    text-align: center;
+  }
+  p{
+    margin: 0 0 0px;
+    text-align:center;
+
+  }
