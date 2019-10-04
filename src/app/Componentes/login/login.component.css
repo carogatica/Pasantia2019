@@ -1,0 +1,17 @@
+.contenedor {
+    width: 420px;
+}
+mat-form-field {
+    margin-right: 12px;
+  }
+
+.titulo {
+    text-align: center;
+}
+.botones {
+    text-align: center;
+}
+
+.header {
+    width: 420px; justify-content: center; background-color: rgb(255, 0, 0)
+}
