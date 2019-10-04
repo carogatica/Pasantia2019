@@ -4,19 +4,14 @@
 mat-form-field {
     margin-right: 12px;
   }
-.TextareaYourExperience {
-    width: 420px;
-}
 
-.twoColumns {
-    display: flex;
-}
 .titulo {
     text-align: center;
 }
 .botones {
     text-align: center;
 }
+
 .header {
-    width: 420px; justify-content: center;
+    width: 420px; justify-content: center; background-color: rgb(255, 0, 0)
 }

@@ -1,6 +1,10 @@
 <div class="contenedor">
 <div class="titulo">
-  <h2>Formulario</h2>
+  <mat-toolbar>  
+    <mat-toolbar-row class="header">
+      <span>Formulario</span>
+    </mat-toolbar-row>
+  </mat-toolbar>
 </div>
   <!--
       <form [formGroup]="checkoutForm" action="/action_page.php">
@@ -9,11 +13,12 @@
   <!--
       <input type="text" class="nuestroInput" name="Colegio" maxlength="100" style="background-color:#f8f8f8"><br>
     -->
-   <div class="primera-linea twoColumns">
+    <mat-card style="width: 420px">
+    <div class="primera-linea twoColumns">
      <div> <!--Username-->
-       <mat-form-field appearance="outline">
-         <mat-label>Username</mat-label>
-         <input matInput placeholder="Ejem:Carlitos777">
+      <mat-form-field appearance="outline">
+        <mat-label>Username</mat-label>
+        <input matInput placeholder="Ejem:Carlitos777">
        </mat-form-field>
      </div>
       <div> <!--Email-->
@@ -61,10 +66,11 @@
                   cdkAutosizeMaxRows="50"
                   value="">
         </textarea>
-    </mat-form-field><br>
-  <div class="botones">
-    <button mat-button>Submit</button>
-    <button mat-button>Load file</button>
-  </div>
+      </mat-form-field><br>
+    <div class="botones">
+      <button mat-button>Submit</button>
+      <button mat-button>Load file</button>
+    </div>
+</mat-card>
 </form>
 </div>
