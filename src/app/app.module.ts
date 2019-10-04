@@ -4,6 +4,9 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { LoginComponent } from './Componentes/login/login.component';
+import { InicioComponent } from './Componentes/inicio/inicio.component';
 import { ForoExperienciaComponent } from './Componentes/foro-experiencia/foro-experiencia.component';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
@@ -13,9 +16,12 @@ import { MatInputModule} from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TextFieldModule } from '@angular/cdk/text-field';
 
+
 @NgModule({
   declarations: [
     AppComponent,
+    LoginComponent,
+    InicioComponent,
     ForoExperienciaComponent,
     FormularioComponent
   ],
@@ -23,6 +29,7 @@ import { TextFieldModule } from '@angular/cdk/text-field';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
     MatButtonModule,
     MatCardModule,
     MatFormFieldModule,
