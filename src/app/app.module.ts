@@ -15,7 +15,13 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule} from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TextFieldModule } from '@angular/cdk/text-field';
+<<<<<<< HEAD
 
+=======
+import {MatButtonModule} from '@angular/material/button';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatCardModule} from '@angular/material/card';
+>>>>>>> 5f65120... Fix component faltante mat-toolbar
 
 @NgModule({
   declarations: [
@@ -37,7 +43,9 @@ import { TextFieldModule } from '@angular/cdk/text-field';
     ReactiveFormsModule,
     MatInputModule,
     TextFieldModule,
-    MatButtonModule
+    MatButtonModule,
+    MatToolbarModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
