@@ -8,20 +8,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './Componentes/login/login.component';
 import { InicioComponent } from './Componentes/inicio/inicio.component';
 import { ForoExperienciaComponent } from './Componentes/foro-experiencia/foro-experiencia.component';
-import {MatButtonModule} from '@angular/material/button';
-import {MatCardModule} from '@angular/material/card';
 import { FormularioComponent } from './Componentes/formulario/formulario.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule} from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TextFieldModule } from '@angular/cdk/text-field';
-<<<<<<< HEAD
-
-=======
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatCardModule} from '@angular/material/card';
->>>>>>> 5f65120... Fix component faltante mat-toolbar
 
 @NgModule({
   declarations: [
