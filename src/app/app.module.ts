@@ -1,29 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, routingcomoponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-import { LoginComponent } from './Componentes/login/login.component';
 import { InicioComponent } from './Componentes/inicio/inicio.component';
-import { ForoExperienciaComponent } from './Componentes/foro-experiencia/foro-experiencia.component';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
-import { FormularioComponent } from './Componentes/formulario/formulario.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule} from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TextFieldModule } from '@angular/cdk/text-field';
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
     InicioComponent,
-    ForoExperienciaComponent,
-    FormularioComponent
+    routingcomoponents
   ],
   imports: [
     BrowserModule,
@@ -37,7 +31,8 @@ import { TextFieldModule } from '@angular/cdk/text-field';
     ReactiveFormsModule,
     MatInputModule,
     TextFieldModule,
-    MatButtonModule
+    MatButtonModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
