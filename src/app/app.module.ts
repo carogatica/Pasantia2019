@@ -11,13 +11,15 @@ import { MatInputModule} from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TextFieldModule } from '@angular/cdk/text-field';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { NoticiasComponent } from './componentes/noticias/noticias.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     InicioComponent,
-    routingcomoponents
+    routingcomoponents,
+    NoticiasComponent
   ],
   imports: [
     BrowserModule,

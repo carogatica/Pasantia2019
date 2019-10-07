@@ -23,7 +23,7 @@
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Inicio</a></li>
                 <!-- <li><a href="#">Foros</a></li> -->
-                <li><a href="#">Tu Experiencia</a></li>
+                <li><a [routerLink]="['/formulario']">Tu Experiencia</a></li>
             </ul>
             <form class="navbar-form navbar-left" action="/action_page.php">
                 <div class="input-group">
@@ -52,6 +52,7 @@
         </div>
             <div class="main2" >
                 <div class="content">
+                  <router-outlet></router-outlet>
                     <h2>Mi Increible pasantia</h2>
                     <p>tuve una gran pasantia en ......</p>
                 </div>
