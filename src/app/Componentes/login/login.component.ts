@@ -13,12 +13,12 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
     this.experienceForm = this.formBuilder.group({
-      schoolName: [''],
-      companyName: [''],
-      duration: ['966847516416'],
-      career: ['panaderia'],
-      experienceFeedback: ['']
+      email: [''],
+      password: ['']
     });
+  }
+  sendData() {
+    console.log('estos son los datos del form', this.experienceForm.value)
   }
 
 }
