@@ -15,10 +15,16 @@ export class FormularioComponent implements OnInit {
     this.experienceForm = this.formBuilder.group({
       schoolName: [''],
       companyName: [''],
-      duration: ['966847516416'],
-      career: ['panaderia'],
-      experienceFeedback: ['']
+      duration: [''],
+      career: [''],
+      experienceFeedback: [''],
+      email: [''],
+      username: ['']
     });
+  }
+
+  sendData() {
+    console.log('estos son los datos del form', this.experienceForm.value)
   }
 
 }

@@ -20,3 +20,7 @@ mat-form-field {
 .header {
     width: 420px; justify-content: center;
 }
+.pantalla {
+    display: flex;
+    justify-content: center;
+}
