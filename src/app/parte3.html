@@ -1,0 +1,182 @@
+<head>
+<title>My Internship</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+  .header {
+  background-color: #f1f1f1;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.static { 
+  float: right;
+  width: 30%;
+  height: 300px; 
+  background: #ccc;
+  padding: 20px;
+}
+* {
+  box-sizing: border-box;
+}
+
+.body{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ */
+/* Style the side navigation */
+.contenedor{
+    width: 90%;
+    padding-right:100px
+}
+.sidenav {
+  height: 560px;
+  width: 200px;
+  position: sticky;
+  z-index: 1;
+  background-color: #111;
+  overflow-x: hidden;
+    min-height:50px;
+    margin-top:-21px;
+ 
+}
+
+
+/* Side navigation links */
+.sidenav a {
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color on hover */
+.sidenav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the content */
+.content {
+  padding-left:55px;
+  height:500px;
+  margin-top:0px;
+  align-content:fixed
+}
+.main {
+display: flex;
+padding-right:100px
+}   
+p {
+    margin: 0 0 0px;
+}
+.container-fluid {
+padding-right:15px;
+padding-left: 15px;
+margin-right:auto;
+margin-left: auto;
+width: max-content;
+}
+footer{
+  background-color: rgb(65, 15, 58);
+  padding:10px;
+  text-align: center;
+  color: white;
+
+}
+.navbar{
+  border-radius: 0px;
+}
+.navbar-inverse {
+  background-color: rgb(65, 15, 58);
+  border-color: #080808
+}
+.content{
+    background-color: lightgrey;
+    width: 684px;
+    border: 11px solid rgb(65, 15, 58);
+    padding: 20px;
+    margin-left: 22px;
+    align-self: center
+  }
+
+  
+  .main2{
+    display: flex; 
+    justify-content: left; 
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+  }
+  h1{
+    font-size:2em;
+    text-align: center;
+  }
+  p{
+    margin: 0 0 0px;
+    text-align:center;
+
+  }
+</style>
+  
+</head>
+<body>
+<div class="contenedor">
+    <div style="background: rgb(87, 22, 78);" class="header" text-align="center">
+    <img src="Pasantia2019/src/assets/logo.png" alt="logo" width="100" height="100">  
+    <h1 style="color: antiquewhite">My Internship</h1>
+    <p style="color: antiquewhite">Siempre pensando en mejorar el futuro.</p>
+    </div>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">¡Bienvenido!</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Inicio</a></li>
+                <!-- <li><a href="#">Foros</a></li> -->
+                <li><a href="#">Tu Experiencia</a></li>
+            </ul>
+            <form class="navbar-form navbar-left" action="/action_page.php">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Carreras, Colegios o Empresas" name="search">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="sidenav">
+            <a href="#">usuario1</a>
+            <a href="#">usuario2</a>
+            <a href="#">usuario3</a>
+            <a href="#">usuario4</a>
+            <a href="#">usuario5</a>
+            <a href="#">usuario6</a>
+            <a href="#">usuario7</a>
+            <a href="#">usuario8</a>
+            <a href="#">usuario9</a>
+            <a href="#">usuario10</a>
+        </div>
+            <div class="main2" >
+                <div class="content">
+                    <h2>Mi Increible pasantia</h2>
+                    <p>tuve una gran pasantia en ......</p>
+                </div>
+            </div>
+        </div>
+
+</div>
+<footer>
+    <p>My Internship</p>
+  </footer>
