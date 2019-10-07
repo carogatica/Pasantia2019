@@ -10,14 +10,41 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { environment } from '../environments/environment';
 import { Authentication } from '../app/servicios/authentication.service'
 
+import { LoginComponent } from './Componentes/login/login.component';
+import { InicioComponent } from './Componentes/inicio/inicio.component';
+import { ForoExperienciaComponent } from './Componentes/foro-experiencia/foro-experiencia.component';
+import { FormularioComponent } from './Componentes/formulario/formulario.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule} from '@angular/material/input';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TextFieldModule } from '@angular/cdk/text-field';
+import {MatButtonModule} from '@angular/material/button';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatCardModule} from '@angular/material/card';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    InicioComponent,
+    ForoExperienciaComponent,
+    FormularioComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule,
+    MatButtonModule,
+    MatCardModule,
+    MatFormFieldModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    TextFieldModule,
+    MatButtonModule,
+    MatToolbarModule,
+    MatCardModule
   ],
   providers: [Authentication],
   bootstrap: [AppComponent]

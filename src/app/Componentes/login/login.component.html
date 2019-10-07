@@ -1,0 +1,30 @@
+<div class="contenedor">
+    <div class="titulo">
+      <h2>LogIn</h2>
+    </div>
+      <!--
+          <form [formGroup]="checkoutForm" action="/action_page.php">
+          -->
+    <form [formGroup]="experienceForm">
+      <!--
+          <input type="text" class="nuestroInput" name="Colegio" maxlength="100" style="background-color:#f8f8f8"><br>
+        -->
+    <div>
+            <div> <!--Username-->
+                <mat-form-field appearance="outline" style= "width:420px">
+                    <mat-label>Email</mat-label>
+                    <input matInput placeholder="Ejem:Carlitos777">
+                </mat-form-field>
+            </div>
+            <div> <!--Email-->
+                <mat-form-field appearance="outline" style= "width:420px">
+                    <mat-label>Password</mat-label>
+                    <input matInput placeholder="">
+                </mat-form-field>
+            </div>    
+    </div>
+        <div class="botones">
+        <button mat-button>Submit</button>
+      </div>
+    </form>
+</div>
