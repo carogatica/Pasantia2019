@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -7,15 +6,16 @@ import { FormBuilder, FormGroup } from '@angular/forms';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  experienceForm: FormGroup;
 
-  constructor( private formBuilder: FormBuilder ) { }
 
   ngOnInit() {
+<<<<<<< HEAD
     this.experienceForm = this.formBuilder.group({
       email: [''],
       password: ['']
     });
+=======
+>>>>>>> nicolas
   }
   sendData() {
     console.log('estos son los datos del form', this.experienceForm.value)

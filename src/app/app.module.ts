@@ -1,29 +1,36 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, routingcomoponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-import { LoginComponent } from './Componentes/login/login.component';
 import { InicioComponent } from './Componentes/inicio/inicio.component';
+<<<<<<< HEAD
 import { ForoExperienciaComponent } from './Componentes/foro-experiencia/foro-experiencia.component';
 import { FormularioComponent } from './Componentes/formulario/formulario.component';
+=======
+import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
+>>>>>>> nicolas
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule} from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TextFieldModule } from '@angular/cdk/text-field';
+<<<<<<< HEAD
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatCardModule} from '@angular/material/card';
+=======
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { NoticiasComponent } from './componentes/noticias/noticias.component';
+
+>>>>>>> nicolas
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
     InicioComponent,
-    ForoExperienciaComponent,
-    FormularioComponent
+    routingcomoponents,
+    NoticiasComponent
   ],
   imports: [
     BrowserModule,
@@ -38,8 +45,12 @@ import {MatCardModule} from '@angular/material/card';
     MatInputModule,
     TextFieldModule,
     MatButtonModule,
+<<<<<<< HEAD
     MatToolbarModule,
     MatCardModule
+=======
+    MatToolbarModule
+>>>>>>> nicolas
   ],
   providers: [],
   bootstrap: [AppComponent]
