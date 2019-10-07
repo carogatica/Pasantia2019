@@ -44,7 +44,17 @@ import {MatCardModule} from '@angular/material/card';
     TextFieldModule,
     MatButtonModule,
     MatToolbarModule,
-    MatCardModule
+    MatCardModule,
+    AngularFireModule.initializeApp({
+      apiKey: "AIzaSyAG1EtTmDOzvIOwxtOTg3k27fnfmj06_Vs",
+      authDomain: "my-internship2019.firebaseapp.com",
+      databaseURL: "https://my-internship2019.firebaseio.com",
+      projectId: "my-internship2019",
+      storageBucket: "my-internship2019.appspot.com",
+      messagingSenderId: "640755767967",
+      appId: "1:640755767967:web:4ab8749f3fc11302aee0aa"
+    }),                                       
+    AngularFireAuthModule
   ],
   providers: [Authentication],
   bootstrap: [AppComponent]
