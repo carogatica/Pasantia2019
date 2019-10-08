@@ -11,7 +11,5 @@ export class ForoExperienciaComponent implements OnInit {
 
   ngOnInit() {
   }
-  goToExperiencia() {
-    console.log("lalalalalalallala")
-  }
+
 }
