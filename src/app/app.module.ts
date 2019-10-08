@@ -14,6 +14,22 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { NoticiasComponent } from './Componentes/noticias/noticias.component';
+// Firebase login
+import { AngularFireModule } from "@angular/fire";
+import { AngularFireAuthModule } from "@angular/fire/auth";
+// Services
+import { AuthService } from './Services/auth.service';
+import { DataService } from './Services/data.service';
+
+var firebaseConfig = {
+  apiKey: "AIzaSyAG1EtTmDOzvIOwxtOTg3k27fnfmj06_Vs",
+  authDomain: "my-internship2019.firebaseapp.com",
+  databaseURL: "https://my-internship2019.firebaseio.com",
+  projectId: "my-internship2019",
+  storageBucket: "my-internship2019.appspot.com",
+  messagingSenderId: "640755767967",
+  appId: "1:640755767967:web:4ab8749f3fc11302aee0aa"
+};
 
 @NgModule({
   declarations: [
@@ -38,9 +54,11 @@ import { NoticiasComponent } from './Componentes/noticias/noticias.component';
     TextFieldModule,
     MatButtonModule,
     MatToolbarModule,
-    MatCardModule
+    MatCardModule,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireAuthModule
   ],
-  providers: [],
+  providers: [AuthService, DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

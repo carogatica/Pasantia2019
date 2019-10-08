@@ -7,10 +7,11 @@ import { NoticiasComponent } from './Componentes/noticias/noticias.component';
 
 
 const routes: Routes = [
-  {path:"Login", component:LoginComponent},
-  {path:"experiencias", component:ForoExperienciaComponent},
-  {path:"formulario", component: FormularioComponent},
-  {path: "Noticias", component: NoticiasComponent}
+  {path: '', component: LoginComponent},
+  {path: 'Login', component: LoginComponent},
+  {path: 'experiencias', component: ForoExperienciaComponent},
+  {path: 'formulario', component: FormularioComponent},
+  {path: 'Noticias', component: NoticiasComponent}
 ];
 
 @NgModule({
@@ -18,4 +19,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingcomoponents=[FormularioComponent, ForoExperienciaComponent, LoginComponent]
+export const routingcomoponents = [FormularioComponent, ForoExperienciaComponent, LoginComponent];
