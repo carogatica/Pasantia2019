@@ -9,14 +9,10 @@ export class LoginComponent implements OnInit {
 
 
   ngOnInit() {
-<<<<<<< HEAD
     this.experienceForm = this.formBuilder.group({
       email: [''],
       password: ['']
     });
-=======
->>>>>>> nicolas
-  }
   sendData() {
     console.log('estos son los datos del form', this.experienceForm.value)
   }
