@@ -65,7 +65,28 @@
       <div class="botones">
         <button mat-button type="submit" (click)="sendData()">Enviar</button>
       </div>
+<<<<<<< HEAD
   </mat-card>
   </form>
   </div>
 </div>
+=======
+    </div>
+    <mat-form-field appearance="outline" class="TextareaYourExperience">
+        <mat-label>Tu Experiencia</mat-label>
+        <textarea matInput
+                  cdkTextareaAutosize
+                  #autosize="cdkTextareaAutosize"
+                  cdkAutosizeMinRows="5"
+                  cdkAutosizeMaxRows="50"
+                  value="">
+        </textarea>
+      </mat-form-field><br>
+    <div class="botones">
+      <button mat-button [routerLink]="['/experiencias']">Submit</button>
+      <button mat-button [routerLink]="['/experiencias']">Load file</button>
+    </div>
+</mat-card>
+</form>
+</div>
+>>>>>>> nicolas

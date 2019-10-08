@@ -83,5 +83,12 @@ li a {
      display: block;
  }
  .parafo{
-    color: white
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.parafo1{
+    color: black;
+    margin-left: 5px;
+    margin-right: 5px
 }

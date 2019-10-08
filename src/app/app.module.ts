@@ -22,9 +22,12 @@ import {MatCardModule} from '@angular/material/card';
 =======
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { NoticiasComponent } from './componentes/noticias/noticias.component';
+<<<<<<< HEAD
 
 >>>>>>> nicolas
 
+=======
+>>>>>>> nicolas
 @NgModule({
   declarations: [
     AppComponent,
