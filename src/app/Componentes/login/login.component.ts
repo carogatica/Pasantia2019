@@ -1,26 +1,24 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from '../../Services/auth.service';
-import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+  experienceForm: any;
+  formBuilder: any;
 
-  constructor( private authService: AuthService, private router: Router) {
 
-  }
   ngOnInit() {
 
+    this.experienceForm = this.formBuilder.group({
+      email: [''],
+      password: ['']
+    });
   }
   sendData() {
-    this.authService.doGoogleLogin().then(res => {
-      if(res) {
-        this.router.navigate(['/experiencias']);
-      }
-    });
-    console.log('estos son los datos del form');
+    console.log('estos son los datos del form', this.experienceForm.value)
   }
 
 }
