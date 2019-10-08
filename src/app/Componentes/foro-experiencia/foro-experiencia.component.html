@@ -5,6 +5,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
 </head>
 <body>
@@ -12,7 +15,7 @@
     <div style="background: rgb(87, 22, 78);" class="header" text-align="center">
     <img src="Pasantia2019/src/assets/logo.png" alt="logo" width="100" height="100">  
     <h1 style="color: antiquewhite">My Internship</h1>
-    <p style="color: antiquewhite">Siempre pensando en mejorar el futuro.</p>
+    <p style="color: antiquewhite">Siempre pensando en nuestro futuro.</p>
     </div>
 
     <nav class="navbar navbar-inverse">
@@ -23,7 +26,11 @@
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Inicio</a></li>
                 <!-- <li><a href="#">Foros</a></li> -->
+<<<<<<< HEAD
                 <li><a [routerLink]="['/formulario']">Tu Experiencia</a></li>
+=======
+                <button mat-stroked-button class="experiencia"(click)="goToExperiencia()">Tu experiencia</button>
+>>>>>>> 29153a7d2b63ddceb53e1a9f33c6f939008f75e1
             </ul>
             <form class="navbar-form navbar-left" action="/action_page.php">
                 <div class="input-group">
@@ -38,28 +45,121 @@
         </div>
     </nav>
     <div class="main">
-        <div class="sidenav">
-            <a href="#">usuario1</a>
-            <a href="#">usuario2</a>
-            <a href="#">usuario3</a>
-            <a href="#">usuario4</a>
-            <a href="#">usuario5</a>
-            <a href="#">usuario6</a>
-            <a href="#">usuario7</a>
-            <a href="#">usuario8</a>
-            <a href="#">usuario9</a>
-            <a href="#">usuario10</a>
-        </div>
+            <div class="w3-top">
+                    <div class="w3-bar w3-black w3-card">
+                      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+                      <a href="#usuario1" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Manuel Verger</a>
+                      <a href="#usuario2" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Leonel Sposetti</a>
+                      <a href="#usuario3" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Mateo Cafferata</a> 
+                      <a href="#usuario4" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Nicolas Arenas</a> 
+                      <a href="#usuario5" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Mateo Sosa</a> 
+                      <a href="#usuario6" class="w3-bar-item w3-button w3-padding-large w3-hide-small">José Sanchez</a> 
+                      <a href="#usuario7" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Santiago Juri Nam</a>                        
+                    </div>
+                </div>
+           
+        
             <div class="main2" >
                 <div class="content">
+<<<<<<< HEAD
                   <router-outlet></router-outlet>
                     <h2>Mi Increible pasantia</h2>
                     <p>tuve una gran pasantia en ......</p>
                 </div>
             </div>
         </div>
+=======
+                        <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="usuario1">
+                                <mat-card class="card-usuario">
+                                    <div class= "info">
+                                        <h6>Manuel Verger</h6>
+                                        <h6>Colegio:Cinco Rios</h6>
+                                        <h6>Empresa:Mcafee</h6>
+                                        <h6>Tipo:Acompañamiento</h6>
+                                        <h6>Duracion:1 semana</h6>
+                                    </div>
+                                        <h2 class="w3-wide">Mcafee</h2>
+                                    
+                                    <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </mat-card>
+                                </div>
+                        <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="usuario2">
+                                <mat-card class="card-usuario">
+                                        <h6>Colegio:Cinco Rios</h6>
+                                        <h6>Empresa:Mcafee</h6>
+                                        <h6>Tipo:Acompañamiento</h6>
+                                        <h6>Duracion:1 semana</h6>
+                                    <h2 class="w3-wide">Mcafee2</h2>
+                                    <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-</div>
-<footer>
-    <p>My Internship</p>
-  </footer>
+                                </mat-card>
+                        </div>
+                        <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="usuario3">
+                            <mat-card class="card-usuario">
+                                    <h6>Colegio:Cinco Rios</h6>
+                                    <h6>Empresa:Mcafee</h6>
+                                    <h6>Tipo:Acompañamiento</h6>
+                                    <h6>Duracion:1 semana</h6>
+                                <h2 class="w3-wide">Mcafee3</h2>
+                                <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                  ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                                  adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </mat-card>
+                        </div>
+                        <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="usuario4">
+                                <mat-card class="card-usuario">
+                                        <h6>Colegio:Cinco Rios</h6>
+                                        <h6>Empresa:Mcafee</h6>
+                                        <h6>Tipo:Acompañamiento</h6>
+                                        <h6>Duracion:1 semana</h6>
+                                    <h2 class="w3-wide">Mcafee4</h2>
+                                    <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                                      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </mat-card>
+                         </div>
+                         <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="usuario5">
+                                 <mat-card class="card-usuario">
+                                        <h6>Colegio:Pio XII</h6>
+                                        <h6>Empresa:Mcafee</h6>
+                                        <h6>Tipo:Acompañamiento</h6>
+                                        <h6>Duracion:1 semana</h6>
+                                     <h2 class="w3-wide">Mcafee5</h2>
+                                     <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                              ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                                              adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                 </mat-card>
+                        </div>
+                        <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="usuario6">
+                                <mat-card class="card-usuario">
+                                        <h6>Colegio:Pio XII</h6>
+                                        <h6>Empresa:Mcafee</h6>
+                                        <h6>Tipo:Acompañamiento</h6>
+                                        <h6>Duracion:1 semana</h6>
+                                    <h2 class="w3-wide">Mcafee6</h2>
+                                    <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                                      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </mat-card>
+                         </div>
+                         <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="usuario7">
+                                <mat-card class="card-usuario">
+                                        <h6>Colegio:Cinco Rios</h6>
+                                        <h6>Empresa:Mcafee</h6>
+                                        <h6>Tipo:Acompañamiento</h6>
+                                        <h6>Duracion:1 semana</h6>
+                                    <h2 class="w3-wide">Mcafee7</h2>
+                                    <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                                      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </mat-card>
+                                </div>
+                                        
+   </div>
+>>>>>>> 29153a7d2b63ddceb53e1a9f33c6f939008f75e1
+
+    
