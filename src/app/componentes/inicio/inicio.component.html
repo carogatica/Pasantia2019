@@ -1,22 +1,22 @@
-  
- 
- 
  <div class= "contenedor">
     <router-outlet></router-outlet>
     <div class="toolbar">
-        <div class="collapse navbar-collapse" id="myNavbar">        
+        <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
               <li><a [routerLink]="['/Noticias']">Noticias</a></li>
               <ul class="navbar-right">
-                <li class= "login"><a [routerLink]="['/Login']"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                <!-- <li class= "login"><a [routerLink]="['/Login']"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
               </ul>
             </ul>
-        </div>      
+        </div>
     </div>
-    
+
     <div class="informacion-principal">
       <div class="columna-empresa"><p class="parafo">Esta pagina tiene el objetivo de ayudar a los estudiantesa informarse para elegir su futuro sabiamente sin fines de lucro por lo tannto todas las funciones son totalmente gratuitas y abilitadas para cualquier persona sin ningun tipo de restriciones creemos que todo el mundotiene derecho al conocimiento</p></div>
-      <div class="columna-MyInternship"><h1>My Internship</h1><router-outlet></router-outlet></div>
+      <div class="columna-MyInternship">
+          <h1>My Internship</h1>
+          <app-login></app-login>
+      </div>
       <div class="columna-contactos"><p class="parafo">Somos un grupo de estudiantes que nos enfrentamos a un problema al buscar una pasantia. Creamos esta pagina para que todos los pasantes puedan contar su experiencia de sus pasantias para que todos los que tienen el mismo problema que tuvimos, nosotros se pueadan apoyar en las experiencias de otros. Si tenes algun problema contactanos<a href="mailto:xddddd@tyi.com"></a></p></div>
     </div>
  </div>

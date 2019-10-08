@@ -1,5 +1,4 @@
 .contenedor {
-    width: 420px;
 }
 mat-form-field {
     margin-right: 12px;
@@ -19,4 +18,9 @@ mat-form-field {
 .pantalla {
     display: flex;
     justify-content: center;
+}
+
+.submit {
+  background-color: #DB4437;
+  color: white;
 }

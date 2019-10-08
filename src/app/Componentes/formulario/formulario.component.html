@@ -1,7 +1,7 @@
 <div class="pantalla">
   <div class="contenedor">
   <div class="titulo">
-    <mat-toolbar style="width: 453px">  
+    <mat-toolbar style="width: 453px">
       <mat-toolbar-row class="header">
         <span>Formulario</span>
       </mat-toolbar-row>
@@ -11,9 +11,9 @@
       <mat-card style="width: 420px">
       <div class="primera-linea twoColumns">
       <div> <!--Username-->
-        <mat-form-field appearance="outline">
+        <mat-form-field appearance="outline" disabled="true">
           <mat-label>Usuario</mat-label>
-          <input matInput placeholder="Ejem:Carlitos777" formControlName="username">
+          <input matInput placeholder="Ejem:Carlitos777" formControlName="username" disabled="true">
         </mat-form-field>
       </div>
         <div> <!--Email-->
@@ -39,9 +39,9 @@
       </div>
       <div class="tercer-linea twoColumns">
         <div> <!--duracion-->
-          <mat-form-field wi appearance="outline" hintLabel="Max 8 characters">
+          <mat-form-field wi appearance="outline" hintLabel="Max 8 caracteres">
             <mat-label>Duración(días)</mat-label>
-            <input matInput #input maxlength="8" placeholder="Ejem:4 Days" formControlName="duration">
+            <input matInput #input maxlength="8" placeholder="Ejem:4 Dias" formControlName="duration">
             <mat-hint align="end">{{input.value?.length || 0}}/8</mat-hint>
           </mat-form-field>
         </div>

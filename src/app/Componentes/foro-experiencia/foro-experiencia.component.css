@@ -6,10 +6,10 @@ padding: 20px;
 text-align: center;
 }
 
-.static { 
+.static {
 float: right;
 width: 30%;
-height: 300px; 
+height: 300px;
 background: #ccc;
 padding: 20px;
 }
@@ -25,7 +25,7 @@ font-family: Arial, Helvetica, sans-serif;
 /* Style the side navigation */
 .contenedor{
   width: 90%;
-  padding-right:100px
+  padding-right:100px;
 }
 .w3-top {
 height: fit-content;
@@ -61,11 +61,12 @@ padding-left:55px;
 height:500px;
 margin-top:0px;
 align-content:fixed
+
 }
 .main {
 display: flex;
 padding-right:100px
-}   
+}
 p {
   margin: 0 0 0px;
 }
@@ -92,13 +93,15 @@ border-color: #080808;
   margin-left: 22px;
   align-self: center;
   height: fit-content;
-  
+  height: calc(100% - 80px);
+  overflow: auto;
+
 }
 
 
 .main2{
-  display: flex; 
-  justify-content: left; 
+  /* display: flex; */
+  justify-content: left;
   margin-left: auto;
   margin-right: auto;
   align-items: center;
@@ -120,18 +123,19 @@ p{
   margin-left: 0px;
   align-self: center;
   height: fit-content;
+  width: 100%;
 }
 .experiencia{
   padding: 7px 6px;
   background-color: rgb(65, 15, 58);
-  color: #f1f1f1;  
+  color: #f1f1f1;
 }
 .navbar-inverse .navbar-nav>.active>a{
   color: #f1f1f1;
   background-color: rgb(65, 15, 58);
 }
 .info{
-  margin-right: 376px;
+  text-align: left
 }
 .info2{
   margin-right: 376px;

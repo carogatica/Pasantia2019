@@ -16,7 +16,26 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { NoticiasComponent } from './componentes/noticias/noticias.component';
 import { RouterModule } from '@angular/router';
 import { LoginComponent } from './Componentes/login/login.component';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule, AngularFirestore} from '@angular/fire/firestore';
+import { AngularFireAuthModule } from '@angular/fire/auth';
 RouterModule.forRoot(routes,{useHash:false,onSameUrlNavigation :"reload"})
+import { AuthService } from './Services/auth.service';
+import { DataService } from './Services/data.service'
+import { HttpClientModule  } from '@angular/common/http';;
+
+export const environment = {
+  firebase: {
+    apiKey: "AIzaSyAG1EtTmDOzvIOwxtOTg3k27fnfmj06_Vs",
+    authDomain: "my-internship2019.firebaseapp.com",
+    databaseURL: "https://my-internship2019.firebaseio.com",
+    projectId: "my-internship2019",
+    storageBucket: "my-internship2019.appspot.com",
+    messagingSenderId: "640755767967",
+    appId: "1:640755767967:web:4ab8749f3fc11302aee0aa"
+  }
+};
+
 
 @NgModule({
   declarations: [
@@ -42,9 +61,12 @@ RouterModule.forRoot(routes,{useHash:false,onSameUrlNavigation :"reload"})
     TextFieldModule,
     MatButtonModule,
     MatToolbarModule,
-    MatCardModule
+    MatCardModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAuthModule, // imports firebase/auth, only needed for auth features
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ AuthService, DataService, AngularFirestore],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
